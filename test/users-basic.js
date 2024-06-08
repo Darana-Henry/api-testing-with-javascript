@@ -1,8 +1,8 @@
 import supertest from "supertest";
 import { expect } from "chai";
 import { faker } from "@faker-js/faker";
+import { TOKEN } from "./properties/properties.js";
 const request = supertest("https://gorest.co.in/public/v2/");
-const TOKEN = "";
 
 //Comments this out
 // describe("Users", () => {
