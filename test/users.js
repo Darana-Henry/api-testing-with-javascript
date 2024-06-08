@@ -72,4 +72,13 @@ describe("Go Rest", () => {
         expect(res.body).to.deep.include(data);
       });
   });
+
+  it("DELETE /users/:id (existing)", () => {
+    return request
+      .delete("users/1")
+      .set("Authorization", `Bearer ${TOKEN}`)
+      .then((res) => {
+        expect(res.body.message).to.be.eq("Resource not found");
+      });
+  });
 });
