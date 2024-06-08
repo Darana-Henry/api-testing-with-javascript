@@ -15,7 +15,7 @@ const TOKEN =
 //   });
 // });
 
-describe("Go Rest", () => {
+describe("Go Rest Basic", () => {
   it("GET /users", () => {
     return request.get(`users?access-token=${TOKEN}`).then((res) => {
       expect(res.body).to.not.be.empty;
