@@ -2,18 +2,20 @@ import supertest from "supertest";
 import { expect } from "chai";
 import { faker } from "@faker-js/faker";
 const request = supertest("https://gorest.co.in/public/v2/");
-const TOKEN = "";
+const TOKEN =
+  "65c11e454486e929de4484c3d50fd8281da4d1d51dfa5af7930fd4d1772ee6b7";
 
-describe("Users", () => {
-  it("GET /users", (done) => {
-    request.get(`users?access-token=${TOKEN}`).end((err, res) => {
-      expect(res.body).to.not.be.empty;
-      done();
-    });
-  });
-});
+//Comments this out
+// describe("Users", () => {
+//   it("GET /users", (done) => {
+//     request.get(`users?access-token=${TOKEN}`).end((err, res) => {
+//       expect(res.body).to.not.be.empty;
+//       done();
+//     });
+//   });
+// });
 
-describe("Users#", () => {
+describe("Go Rest", () => {
   it("GET /users", () => {
     return request.get(`users?access-token=${TOKEN}`).then((res) => {
       expect(res.body).to.not.be.empty;
@@ -51,6 +53,22 @@ describe("Users#", () => {
       .send(data)
       .then((res) => {
         expect(res.body.name).to.eq(data.name);
+        expect(res.body).to.deep.include(data);
+      });
+  });
+
+  it("PUT /users/:id", () => {
+    const data = {
+      name: faker.person.fullName(),
+      email: faker.internet.email(),
+      status: "active",
+    };
+
+    return request
+      .put("users/6953236")
+      .set("Authorization", `Bearer ${TOKEN}`)
+      .send(data)
+      .then((res) => {
         expect(res.body).to.deep.include(data);
       });
   });
