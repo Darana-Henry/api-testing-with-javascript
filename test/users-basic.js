@@ -2,8 +2,7 @@ import supertest from "supertest";
 import { expect } from "chai";
 import { faker } from "@faker-js/faker";
 const request = supertest("https://gorest.co.in/public/v2/");
-const TOKEN =
-  "65c11e454486e929de4484c3d50fd8281da4d1d51dfa5af7930fd4d1772ee6b7";
+const TOKEN = "";
 
 //Comments this out
 // describe("Users", () => {
