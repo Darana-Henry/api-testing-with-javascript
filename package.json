@@ -5,7 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "mocha --timeout 6000"
+    "test": "mocha --timeout 6000",
+    "test-with-report": "mocha --timeout 5000 --reporter mochawesome"
   },
   "keywords": [],
   "author": "Henry Darana",
@@ -19,6 +20,7 @@
     "@faker-js/faker": "^8.4.1",
     "chai": "^5.1.1",
     "mocha": "^10.4.0",
+    "mochawesome": "^7.1.3",
     "supertest": "^7.0.0"
   },
   "dependencies": {
