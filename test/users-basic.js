@@ -1,18 +1,10 @@
-import supertest from "supertest";
+import dotenv from "dotenv";
+dotenv.config();
 import { expect } from "chai";
 import { faker } from "@faker-js/faker";
-import { TOKEN } from "./properties/properties.js";
-const request = supertest("https://gorest.co.in/public/v2/");
+import request from "../test/properties/common.js";
 
-//Comments this out
-// describe("Users", () => {
-//   it("GET /users", (done) => {
-//     request.get(`users?access-token=${TOKEN}`).end((err, res) => {
-//       expect(res.body).to.not.be.empty;
-//       done();
-//     });
-//   });
-// });
+const TOKEN = process.env.USER_TOKEN;
 
 describe("Go Rest Basic", () => {
   it("GET /users", () => {
