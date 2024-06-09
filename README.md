@@ -1,3 +1,5 @@
+[![SVG Banners](https://svg-banners.vercel.app/api?type=glitch&text1=API%20Testing%20w%20JS&width=1000&height=200)](https://github.com/Darana-Henry)
+
 # 💻 Tech Stack:
 
 ### Frameworks and Libraries:
@@ -5,9 +7,6 @@
 | SuperTest                                                                                     | Mocha                                                                                        | Chai                                                                                         | Reporting                                                                                                                         | JavaScript                                                                                                                    | Babel                                                                                         | Faker JS                                                                                       | DotEnv                                                                                                   |
 | --------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
 | <img src="https://avatars.githubusercontent.com/u/30959108?s=48&v=4" width="55" height="55"/> | <img src="https://avatars.githubusercontent.com/u/8770005?s=48&v=4" width="55" height="55"/> | <img src="https://avatars.githubusercontent.com/u/1515293?s=48&v=4" width="55" height="55"/> | <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRFPrub8_Y-yTn2XDNnEzFDQgnc78ygJITsQ&s"  width="55" height="55"/> | <img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg"  width="55" height="55"/> | <img src="https://avatars.githubusercontent.com/u/9637642?s=48&v=4"  width="55" height="55"/> | <img src="https://avatars.githubusercontent.com/u/97165289?s=48&v=4"  width="55" height="55"/> | <img src="https://raw.githubusercontent.com/motdotla/dotenv/master/dotenv.svg"  width="55" height="55"/> |
-
-
-Welcome to the project! Follow the steps below to set up and run the tests.
 
 ## Getting Started
 
@@ -24,7 +23,6 @@ Welcome! To get started with this project, follow these steps:
 1. **Clone the Repository**
    ```sh
    git clone https://github.com/Darana-Henry/api-testing-with-javascript.git   
-Sure, here is the markdown text formatted properly:
 
 2. **Install Dependencies**
    ```sh
