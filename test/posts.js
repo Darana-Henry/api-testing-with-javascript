@@ -1,9 +1,11 @@
-import supertest from "supertest";
+import dotenv from "dotenv";
+dotenv.config();
 import { expect } from "chai";
 import { faker } from "@faker-js/faker";
-import { TOKEN } from "./properties/properties.js";
 import { createUser } from "./utils/user-util.js";
-const request = supertest("https://gorest.co.in/public/v2/");
+import request from "../test/properties/common.js";
+
+const TOKEN = process.env.USER_TOKEN;
 
 describe("Posts", () => {
   let userID;
