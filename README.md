@@ -43,16 +43,7 @@ Sure, here is the markdown text formatted properly:
      USER_TOKEN=your_generated_api_token
      ```
 
-<img src="https://user-images.githubusercontent.com/74038190/212284087-bbe7e430-757e-4901-90bf-4cd2ce3e1852.gif" align="left" width="20"/> <span style="color: red; animation: blink 1s infinite;"> Note:You only get the token after you log in. Do not share this token.</span>
-
-<style>
-@keyframes blink {
-  0% { opacity: 1; }
-  50% { opacity: 0; }
-  100% { opacity: 1; }
-}
-</style>
-
+<img src="https://user-images.githubusercontent.com/74038190/212284087-bbe7e430-757e-4901-90bf-4cd2ce3e1852.gif" align="left" width="20"/> <span style="color: red;"> Note:You only get the token after you log in. Do not share this token.</span>
 
 ## How to Run Tests
 
