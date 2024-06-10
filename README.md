@@ -61,6 +61,16 @@ You have two options to run the tests for this project:
      ```
    - ![HTML Report](./images/mocha-awesome%20reporter.gif)
 
+3. **JUnit Report for Jenkins**
+   - If you run with Jenkins, and use JUnit Report to publish your reports, you can run:
+     ```sh
+     npm run test-with-junit
+     ```
+   - This will run the tests and output a file named test-results.xml in the root folder.
+   - **Note**: This won't output anything on the console. So it might feel like the test is stuck, but actually it's running in the background.
+
+   - <img src="./images/mocha-junit-report.png" alt="HTML Report" height="100" width="500">
+
 ### Example Usage
 
 **Console Output Only**
